@@ -21,10 +21,15 @@ Utilizando a classe teste, você pode utilizar as funcionalides da Livraria que 
 
 ### SOLID
 O projeto foi construido tentando atender a metodologia de SOLID como:
+
 S - Responsabilidade Única -> Uma classe deve ter uma única responsabilidade.
+
 O - Aberto-Fechado -> As classes devem ser abertas para extensão, mas fechadas para modificação.
-L - Substituição Liskov -> Se S é um subtipo de T, então objetos do tipo T em um programa podem ser substituídos por objetos do tipo S sem alterar nenhuma das propriedades desejáveis ​​daquele programa.
+
+L - Substituição Liskov -> Se S é um subtipo de T, então objetos do tipo T em um programa podem ser substituídos por objetos do tipo S sem alterar nenhuma das propriedades desejáveis daquele programa.
+
 I -  Segregação de Interface -> Os clientes não devem ser forçados a depender de métodos que não usam.
+
 D — Inversão de Dependência -> Módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender da abstração. E as abstrações não devem depender de detalhes. Os detalhes devem depender de abstrações.
 
 
