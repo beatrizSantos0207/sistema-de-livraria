@@ -30,7 +30,7 @@ L - Substituição Liskov -> Se S é um subtipo de T, então objetos do tipo T e
 
 I -  Segregação de Interface -> Os clientes não devem ser forçados a depender de métodos que não usam.
 
-D — Inversão de Dependência -> Módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender da abstração. E as abstrações não devem depender de detalhes. Os detalhes devem depender de abstrações.
+D - Inversão de Dependência -> Módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender da abstração. E as abstrações não devem depender de detalhes. Os detalhes devem depender de abstrações.
 
 
 ### Design Patterns
