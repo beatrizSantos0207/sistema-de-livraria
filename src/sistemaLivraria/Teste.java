@@ -26,8 +26,7 @@ public class Teste {
         Item filmePorno = FilmeAdulto.builder().nome("Bruna Surfistinha").preco(12.99).build();
 
 
-        Item brinquedoAdulto = BrinquedoAdulto.builder().nome("Vribbrador").preco(500.00).tipo("ifantil").build();
-        System.out.println(brinquedoAdulto.toString());
+
 
         ControleItens controladoriaProdutos = new ControleItens();
         controladoriaProdutos.adicionarProduto(filme);
@@ -40,7 +39,6 @@ public class Teste {
 
 
         controladoriaProdutos.mostrarItem(filme.getId());
-//        controladoriaProdutos.alterarProdutos(1, "Alien");
 
         GerenciadorEstoque gereciadorEstoque = new GerenciadorEstoque(controladoriaProdutos.getItens());
 
@@ -48,7 +46,7 @@ public class Teste {
         System.out.println(gereciadorEstoque.listarEstoque());
         System.out.println(brinquedo.toString());
 
-        Consumidor consumidor = Consumidor.builder().nome("Safadinho").cpf(3434343L).rg(24243L).dataNascimento("12/06/1997").build();
+        Consumidor consumidor = Consumidor.builder().nome("Robbert").cpf(3434343L).rg(24243L).dataNascimento("12/06/1997").build();
 
         CaixaStrategy caixa = new CaixaStrategy(gereciadorEstoque, controladoriaProdutos);
         caixa.realizarCompra(Arrays.asList(brinquedo, cantor));
@@ -57,14 +55,11 @@ public class Teste {
         System.out.println("valor caixa " + caixa.getCaixa());
 
 
-//        System.out.println(controladoriaProdutos.mostrarItem(brinquedo.getId()));
-//        System.out.println(controladoriaProdutos.mostrarItem(cantor.getId()));
 
         CaixaStrategy caixaAdulto = new CaixaStrategy(gereciadorEstoque, controladoriaProdutos);
         caixaAdulto.realizarCompra(Collections.singletonList(livro2), consumidor);
         System.out.println("valor caixa " + caixaAdulto.getCaixa());
 
-//        System.out.println(controladoriaProdutos.mostrarItem(filmePorno.getId()));
 
 
 
